@@ -13,7 +13,12 @@ int main(void)
 	{
 		putchar(alpha);
 
-		if (alpha == 'z')
+	}
+	for (alpha = 'A'; alpha <= 'Z'; alpha++)
+	{
+		putchar(alpha);
+
+		if (alpha == 'Z')
 		{
 			putchar('\n');
 		}
