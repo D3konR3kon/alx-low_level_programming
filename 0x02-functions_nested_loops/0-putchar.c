@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
  * main - Entry point
@@ -6,10 +6,19 @@
  * Return: Always 1 (Success)
  */
 
-int main(void)
+int _putchar(char c)
 {
-	char p[10] = "_putchar";
 
-	printf("%s\n", p);
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
+
 	return (0);
+
 }
