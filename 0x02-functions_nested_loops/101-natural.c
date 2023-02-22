@@ -1,28 +1,21 @@
+#include "main.h"
 #include <stdio.h>
-
+#include <math.h>
 /**
- * main - Prints the add of the even-valued
- * fibonacci numbers.
- *
- * Return: Always 0.
+ * main - main block
+ * Description: Print the sum of all multiples of 3 or 5 below 1024.
+ * Return: 0
  */
 int main(void)
 {
-	long int n1, n2, fn, afn;
+	int a, b;
 
-	n1 = 1;
-	n2 = 2;
-	fn = afn = 0;
-	while (fn <= 4000000)
+	for (a = 1; a < 1024; a++)
 	{
-		fn = n1 + n2;
-		n1 = n2;
-		n2 = fn;
-		if ((n1 % 2) == 0)
-		{
-			afn += n1;
-		}
+		if ((a % 3) == 0 || (a % 5) == 0)
+			b += a;
 	}
-	printf("%ld\n", afn);
+	printf("%d\n", b);
 	return (0);
+
 }
