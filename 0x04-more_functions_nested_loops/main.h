@@ -2,6 +2,7 @@
 #define MAIN_H
 
 int _isupper(int c);
+int _isdigit(int c);
 
 #include <stdio.h>
 #endif /*MAIN_H*/
